@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Legend — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-copy">
+      <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+      <h1>Leonida Legend</h1>
+      <p class="deck">Every trophy, its own-words guide, and a tracker that remembers what you have earned — all offline, all in one page.</p>
+    </div>
+    <div class="progress-card" id="progressCard" aria-label="Progress to platinum">
+      <div class="progress-big"><span id="earnedCount">0</span><span class="progress-of">/ 55</span></div>
+      <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+      <p class="progress-label" id="progressLabel">0% to the Platinum</p>
+      <div class="grade-counts" id="gradeCounts"></div>
+    </div>
+  </div>
+</header>
+
+<div class="toolbar" id="toolbar">
+  <input id="search" type="search" placeholder="Search trophies, guides, missions…" aria-label="Search trophies">
+  <div class="chips" id="kindChips" role="group" aria-label="Filter by kind">
+    <button class="chip active" data-kind="all">All 55</button>
+    <button class="chip" data-kind="story">Story</button>
+    <button class="chip" data-kind="collectibles">Collectibles</button>
+    <button class="chip" data-kind="activities">Activities</button>
+    <button class="chip" data-kind="missable">Missable</button>
+    <button class="chip" data-kind="hidden">Hidden</button>
+  </div>
+  <label class="toggle"><input type="checkbox" id="spoilerToggle"> <span>Hide story spoilers</span></label>
+  <label class="toggle"><input type="checkbox" id="earnedOnly"> <span>Earned only</span></label>
+  <div class="toolbar-actions">
+    <button id="exportBtn" class="btn">Export progress</button>
+    <button id="importBtn" class="btn">Import progress</button>
+    <input type="file" id="importFile" accept="application/json" hidden>
+    <button id="resetBtn" class="btn danger">Reset</button>
+  </div>
+</div>
+
+<main>
+  <section class="roadmap" id="roadmap" aria-label="Road to the platinum">
+    <div class="section-head">
+      <h2>The road to the Platinum</h2>
+      <p>Six stages, in the order that wastes the least time. One playthrough is enough — PowerPyx puts the Platinum near 200 hours at difficulty 4/10.</p>
+    </div>
+    <ol class="stages" id="stages"></ol>
+    <p class="roadmap-note" id="missableNote"></p>
+  </section>
+
+  <section class="list-section" aria-label="Trophy list">
+    <div class="section-head">
+      <h2 id="listHeading">All trophies</h2>
+      <p id="resultCount"></p>
+    </div>
+    <div class="trophy-grid" id="trophyGrid"></div>
+    <p class="empty" id="emptyState" hidden>No trophies match these filters. Clear the search or pick another kind.</p>
+  </section>
+</main>
+
+<footer class="colophon">
+  <p><strong>Sources.</strong> Trophy names, descriptions and grades as reported from PlayStation Network by Exophase, cross-checked with PSNProfiles and TrueAchievements (18 Nov 2026). Method notes from PowerPyx, Push Square and GTA BOOM where cited on each card. Guides are written in the author's own words; nothing here copies another guide's text.</p>
+  <p><strong>Honest gaps.</strong> Six trophies have no publicly confirmed unlock method yet (Personal Best, Actions Speak Louder, Bad Luck I Guess, The Truth Is Out There, Catch Me If You Can, Challenging Tank). They are marked unconfirmed on their cards rather than guessed at.</p>
+  <p><strong>Rules of the road.</strong> Cheats disable trophies and saving — leave them off for a trophy run. Keep a manual save at the start of each chapter: Positive Mental Attitude is the one trophy reported as possibly missable. There are no online trophies; every one of the 55 is earned in single-player.</p>
+  <p class="fineprint">Leonida Legend is an unofficial fan guide. Grand Theft Auto, GTA and Rockstar Games are trademarks of their owners. This page works fully offline — no network requests, no accounts, no tracking. Your progress is stored only in this browser (localStorage) and can be exported or imported as JSON.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
